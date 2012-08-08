@@ -1,0 +1,51 @@
+/*
+Document   : inastall-guide
+Created on : Sep 20, 2011, 10:22:58 PM
+Author     : Studio365
+Description:
+Purpose of the stylesheet follows.
+*/
+#articles .screenshot, IMG
+{
+	margin: 10px;
+	float: left;
+	border: 1px dotted #D1D1D1;
+	padding: 5px;
+	background-color: #F7F7F7;
+}
+.install-help H1
+{
+	font-family: "Myriad Web Pro", "Lucida Sans Unicode", Arial, sans-serif;
+	color: #9B9B9B;
+	font-style: italic;
+	font-size: 20px;
+	padding-bottom: 10px;
+}
+#articles H1, #articles H2, #articles H3, #articles H4, #articles H5
+{
+	font-family: "Myriad Web Pro", "Lucida Sans Unicode", Arial, sans-serif;
+	color: #9B9B9B;
+}
+.page
+{
+	padding-bottom: 40px;
+}
+#branding
+{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#articles
+{
+	margin-bottom: 40px;
+	padding-bottom: 40px;
+}
+.alert-box
+{
+	text-align: center;
+}
+#copright-info
+{
+	text-align: center;
+	margin-bottom: 40px;
+}

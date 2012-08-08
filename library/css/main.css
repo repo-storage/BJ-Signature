@@ -1,0 +1,453 @@
+/*
+* Gridless version 2.0
+
+* Credit is left inline and big thanks to Nicolas Gallagher and Jonathan Neal
+
+* Across this document we use safe CSS hacks: http://mathiasbynens.be/notes/safe-css-hacks
+* Selectors beggining with an underscore (_selector: property) target only IE6
+* Selectors beggining with an asterisk (*selector: property) target only IE6 and IE7
+
+HTML5 display definitions
+----------------------------------------
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, dialog*/
+#INVALID-RULE
+{
+	display: block;
+}
+/*Corrects inline-block not defined in IE6/7/8 and FF3*/
+AUDIO, CANVAS, VIDEO
+{
+	display: inline-block;
+	display: inline;
+	zoom: 1;
+}
+/*audio:not([controls])*/
+#INVALID-RULE
+{
+	display: none;
+}
+/*Ensures content is hidden from all presentations, including screenreaders*/
+[hidden]
+{
+	display: none;
+	visibility: hidden;
+}
+/*Base structure
+----------------------------------------
+
+* The body will work like a 'div#wrapper' (for this to work, the 'body' needs to have a set width)
+
+* To add a background to the PAGE, set it in the 'html' element
+* To add a background to the WRAPPER, set it in the 'body' element
+*/
+HTML
+{
+	height: 100%;
+	font-size: 100%;
+	overflow-y: scroll;
+/*Force a scrollbar in non-IE*/
+	-webkit-text-size-adjust: 100%;
+/*Prevent iOS text size adjust on orientation change without disabling user zoom
+-ms-text-size-adjust: 100%*/
+}
+BODY
+{
+	margin: 0 auto;
+	min-height: 100%;
+}
+/*Fonts settings based on the 100E2R standard: http://www.informationarchitects.jp/en/100e2r/*/
+BODY, BUTTON, INPUT, SELECT, TEXTAREA
+{
+	font: 1em/1.625 Georgia, serif;
+	color: #333;
+/*Black on white is too much contrast, #333 is a lot better*/
+}
+/*Add and/or remove tags as your baseline grid needs
+p, blockquote, q, pre, address, hr, code, samp, dl, ol, ul, form, table, fieldset, menu, h4, h5, h6, img, figure, figcaption, button, hr*/
+#INVALID-RULE
+{
+	margin: 0 0 1.625em;
+}
+/*Headings/small
+----------------------------------------
+
+* Font sizes are based on the golden ratio of 16
+* See this for the modular scale: ow.ly/5jGl6
+* Line-heights and margins are adjusted to keep a 26px (1.625em) vertical rhythm across elements
+*/
+H1, H2, H3, H4, H5, H6
+{
+	font-family: Palatino, "Palatino Linotype", "Book Antiqua", FreeSerif, Georgia, serif;
+	font-size: 1em;
+	font-weight: bold;
+}
+H1
+{
+	font-size: 4.25em;
+/*68px*/
+	line-height: 1.1471em;
+	margin: 0 0 0.3824em;
+}
+H2
+{
+	font-size: 2.625em;
+/*42px*/
+	line-height: 1.2381em;
+	margin: 0 0 0.619em;
+}
+H3
+{
+	font-size: 1.625em;
+/*26px*/
+	line-height: 1em;
+	margin: 0 0 1em;
+}
+SMALL
+{
+	font-size: 0.625em;
+/*10px*/
+	margin: 0 0 2.6em;
+}
+/*Preformatted text and code
+----------------------------------------
+Allows line wrapping of 'pre'*/
+PRE
+{
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+PRE, CODE, KBD, SAMP
+{
+	font: 1em/1.625em Menlo, Consolas, "DejaVu Sans Mono", Monaco, "Courier New", Courier, monospace;
+}
+/*Tables
+----------------------------------------*/
+TABLE
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+TH
+{
+	text-align: left;
+}
+TR, TH, TD
+{
+	padding-right: 1.625em;
+}
+/*Forms
+----------------------------------------*/
+FORM
+{
+	margin: 0;
+}
+FIELDSET
+{
+	border: 0;
+	padding: 0;
+}
+TEXTAREA
+{
+	overflow: auto;
+	vertical-align: top;
+}
+LEGEND
+{
+	border: 0;
+	margin-left: -7px;
+}
+BUTTON, INPUT, SELECT, TEXTAREA
+{
+	vertical-align: baseline;
+	vertical-align: middle;
+}
+BUTTON, INPUT
+{
+	line-height: normal;
+	overflow: visible;
+}
+BUTTON, INPUT[type="button"], INPUT[type="reset"], INPUT[type="submit"]
+{
+	cursor: pointer;
+	-webkit-appearance: button;
+}
+INPUT[type="checkbox"], INPUT[type="radio"]
+{
+	box-sizing: border-box;
+}
+INPUT[type="search"]
+{
+	-webkit-appearance: textfield;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+}
+INPUT[type="search"]::-webkit-search-decoration
+{
+	-webkit-appearance: none;
+}
+BUTTON::-moz-focus-inner, INPUT::-moz-focus-inner
+{
+	border: 0;
+	padding: 0;
+}
+/*Reintroduce inner spacing in 'table' to avoid overlap and whitespace issues in IE6/7*/
+TABLE BUTTON, TABLE INPUT
+{
+	overflow: auto;
+}
+/*Quotes
+----------------------------------------*/
+BLOCKQUOTE, Q
+{
+	quotes: none;
+}
+BLOCKQUOTE:before, BLOCKQUOTE:after, Q:before, Q:after
+{
+	content: '';
+	content: none;
+}
+BLOCKQUOTE, Q, CITE
+{
+	font-style: italic;
+}
+BLOCKQUOTE
+{
+	padding-left: 1.625em;
+	border-left: 1px solid #DDD;
+}
+BLOCKQUOTE>P
+{
+	padding: 0;
+}
+/*Lists
+----------------------------------------*/
+UL, OL
+{
+	list-style-position: inside;
+	padding: 0;
+	margin: 0;
+}
+LI UL, LI OL
+{
+	margin: 0 1.625em;
+}
+DL DD
+{
+	margin-left: 1.625em;
+}
+/*Links
+----------------------------------------*/
+A, A:visited
+{
+	text-decoration: none;
+	color: #06C;
+	/*[ph]0*/
+}
+@media print
+{
+	A, A:visited
+	{
+		/*[id]0*/text-decoration: underline;
+	}
+}
+A:hover
+{
+	border-bottom: 1px solid #000000;
+}
+A:focus
+{
+	outline: thin dotted #000000;
+}
+/*Better CSS outline suppression: people.opera.com/patrickl/experiments/keyboard/test*/
+A:hover, A:active
+{
+	outline: none;
+}
+/*Figures
+----------------------------------------*/
+FIGURE
+{
+	margin: 0;
+}
+/*Embedded content
+----------------------------------------*/
+IMG, OBJECT, VIDEO
+{
+	max-width: 100%;
+/*Automatically scales images larger than the container. Consider this first: http://unstoppablerobotninja.com/entry/fluid-images/
+_width: 100%; /* IE6 doesn't support max-width, so we just use width. If the image is larger than the container, just uncomment this. If it is smaller than the container, uncomment and change the 100% value to an absolute one*/
+}
+IMG
+{
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+/*Improve IE's resizing of images: css-tricks.com/ie-fix-bicubic-scaling-for-images*/
+}
+/*Corrects overflow displayed oddly in IE9
+svg:not(:root)*/
+#INVALID-RULE
+{
+	overflow: hidden;
+}
+/*Abbreviations
+----------------------------------------*/
+ABBR[title], DFN[title]
+{
+	border-bottom: 1px dotted #000000;
+	cursor: help;
+}
+/*Marked/inserted/deleted text
+----------------------------------------*/
+MARK
+{
+	background: #FF0;
+}
+INS
+{
+	text-decoration: none;
+	background: #FF9;
+}
+DEL
+{
+	text-decoration: line-through;
+}
+/*Others
+----------------------------------------*/
+HR
+{
+	display: block;
+	height: 1px;
+	border: 0;
+	border-bottom: 1px solid #DDD;
+}
+STRONG, B, DT
+{
+	font-weight: bold;
+}
+DFN
+{
+	font-style: italic;
+}
+VAR, ADDRESS
+{
+	font-style: normal;
+}
+/*Position 'sub' and 'sup' without affecting line-height: gist.github.com/413930*/
+SUB, SUP
+{
+	font-size: 0.625em;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+SUP
+{
+	top: -0.5em;
+}
+SUB
+{
+	bottom: -0.25em;
+}
+/*Helper classes
+----------------------------------------
+
+* Micro clearfix hack, more semantically titled with 'group'
+* Source: nicolasgallagher.com/micro-clearfix-hack/
+*/
+.group:before, .group:after
+{
+	content: "";
+	display: table;
+}
+.group:after
+{
+	clear: both;
+}
+.group
+{
+	zoom: 1;
+}
+/*Primary styles
+----------------------------------------
+Media queries
+----------------------------------------
+The media queries included in here are only placeholder. Modify them as your content requires
+Wide mobile (480px+) styles go here
+Tablets/netbooks (768px+) styles go here
+Desktops (1024px+) styles go here
+Print styles
+----------------------------------------
+Print styles inlined to avoid extra HTTP connection*/
+@media print
+{
+	*
+	{
+		background: transparent !important;
+		color: #000000 !important;
+/*Black prints faster: sanbeiji.com/archives/953*/
+		text-shadow: none !important;
+		filter: none !important;
+		-ms-filter: none !important;
+	}
+}
+@media print
+{
+	A[href]:after
+	{
+		content: " (" attr(href) ")";
+	}
+}
+@media print
+{
+	ABBR[title]:after
+	{
+		content: " (" attr(title) ")";
+	}
+}
+/*Do not show javascript and internal links*/
+@media print
+{
+	A[href^="javascript:"]:after, A[href^="#"]:after
+	{
+		content: "";
+	}
+}
+/*Printing Tables: css-discuss.incutio.com/wiki/Printing_Tables*/
+@media print
+{
+	THEAD
+	{
+		display: table-header-group;
+	}
+}
+@media print
+{
+	TR, IMG
+	{
+		page-break-inside: avoid;
+	}
+}
+@media print
+{
+	@page
+	{
+		margin: 0.5cm;
+	}
+}
+@media print
+{
+	P, H2, H3
+	{
+		orphans: 3;
+		widows: 3;
+	}
+}
+@media print
+{
+	H2, H3
+	{
+		page-break-after: avoid;
+	}
+}

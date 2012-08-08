@@ -1,0 +1,98 @@
+/*
+Document   : mobile
+Created on : Jul 5, 2012, 7:40:24 PM
+Author     : studio
+Description:
+Purpose of the stylesheet follows.
+
+***************MOBILE DEVICES******************
+// Landscape phones and down*/
+@media (max-width: 480px)
+{
+	#site-title A:link, #site-title A:visited, #site-title
+	{
+		font-size: 36px;
+		font-size: 3.6rem;
+	}
+	.feature-summary H3
+	{
+		font-size: 20px;
+		font-size: 2.0rem;
+	}
+	#articles H1, #articles H1 A
+	{
+		font-size: 18px;
+		font-size: 1.8rem;
+	}
+	P
+	{
+		font-size: 1.2px;
+		font-size: 1.2rem;
+	}
+	#articles H1, #articles H1 A
+	{
+		font-size: 22px;
+		font-size: 2.2rem;
+	}
+/*// Landscape phone to portrait tablet
+mobiles (phones,tablets) landscape and portrait*/
+}
+@media (min-width: 220px) and (max-width: 768px)
+{
+	#header .social
+	{
+		text-align: center;
+		padding-top: 20px;
+	}
+}
+
+@media (min-width: 220px) and (max-width: 768px)
+{
+	#site-title, .header-copy
+	{
+		/*[id]0*/text-align: center;
+	}
+	#header H1 .pictograms
+	{
+		display: block;
+	}
+	#site-title A:link, #site-title A:visited, #site-title
+	{
+		font-size: 36px;
+		font-size: 3.6rem;
+	}
+	.header-copy
+	{
+		font-size: 12px;
+	}
+/*.social-icons {font-size: 28px}*/
+	P
+	{
+		font-size: 1.6px;
+		font-size: 1.6rem;
+	}
+	.feature-summary H3
+	{
+		font-size: 28px;
+		font-size: 2.8rem;
+	}
+}
+
+@media (min-width: 220px) and (max-width: 768px)
+{
+	#articles H1, #articles H1 A
+	{
+		/*[id]1*/font-size: 26px;
+		/*[id]2*/font-size: 2.6rem;
+	}
+/*
+// Portrait tablet to landscape and desktop*/
+}
+@media (min-width: 768px) and (max-width: 980px)
+{
+	#header .social
+	{
+		text-align: center;
+	}
+/*// Large desktop*/
+}

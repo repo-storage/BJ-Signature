@@ -1,0 +1,109 @@
+/*
+Document   : editor
+Created on : Sep 15, 2011, 12:11:28 PM
+Author     : Studio365
+Description:
+Purpose of the stylesheet follows.
+*/
+.post H1, .post H2, .post H3, .post H4
+{
+	font-weight: normal;
+	margin: 0 0 10px;
+}
+.post H2
+{
+	font-size: 2em;
+}
+#articles .page-header H1
+{
+	font-size: 1em;
+	text-align: right;
+	color: #CCCCCC;
+}
+.post H2
+{
+	padding: 10px 180px 10px 15px;
+	/*[disabled]background:#237ABF url(../images/title-bg.png) repeat-x;*/
+	margin: 0;
+	line-height: 1.3;
+	font-size: 22px;
+}
+.post H2, .post H2 A
+{
+	/*[disabled]color:#FFFFFF;*/
+	/*[disabled]text-shadow:0 1px 2px #143855;*/
+}
+.post H2 A:hover
+{
+	color: #B8E0FF;
+}
+.post H3
+{
+	font-size: 20px;
+	padding: 5px 0;
+	margin: 30px 0 15px;
+	border-top: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+}
+.post H4
+{
+	font-size: 18px;
+}
+.post P
+{
+	margin: 0 0 10px;
+}
+.post PRE
+{
+	background: #EEE;
+	padding: 15px;
+	overflow: auto;
+	margin: 0 0 15px;
+	border: 1px solid #DDD;
+}
+.post PRE CODE
+{
+	font-size: 11px;
+}
+.post CODE
+{
+	background: #EEE;
+	font: 12px Monaco, Courier, Monospace;
+	color: #0E304A;
+}
+.post H3 CODE
+{
+	font-size: 18px;
+}
+.post ACRONYM, ABBR
+{
+	border-bottom: 1px dotted #514031;
+	cursor: help;
+}
+.post INS
+{
+	text-decoration: underline;
+}
+.post DEL
+{
+	text-decoration: line-through;
+}
+.post A
+{
+	outline: none;
+	text-decoration: none;
+	color: #19517C;
+	/*[disabled]background:#EEE;*/
+	/*[disabled]border:1px solid #DDD;*/
+	padding: 1px 3px 2px;
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.post A:hover
+{
+	/*[disabled]color:#FFF;*/
+	/*[disabled]background:#143855;*/
+	/*[disabled]border:1px solid #143855;*/
+}

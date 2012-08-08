@@ -1,0 +1,66 @@
+/*
+Document   : cycle
+Created on : Sep 7, 2011, 11:15:01 AM
+Author     : Studio365
+Description:
+Purpose of the stylesheet follows.
+
+Slider*/
+#slider
+{
+	/*[disabled]min-height:200px;*/
+	margin-bottom: 20px;
+	background-color: #F3F3F3;
+}
+#cycle
+{
+	min-height: 300px;
+	background-color: #DDDDDD;
+	margin-bottom: 20px;
+	text-align: center;
+}
+#slide
+{
+	margin-bottom: 20px;
+	min-height: 300px;
+}
+#slider .slider
+{
+	background-color: #F3F3F3;
+}
+#slider .cycle-slider
+{
+	min-height: 300px;
+	background-color: #DDDDDD;
+	overflow: hidden;
+}
+#slider #site-description
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#slide-nav
+{
+	font-size: 12px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+#prev, #next
+{
+	text-transform: uppercase;
+	font-size: 9pt;
+	color: #959595;
+	text-decoration: none;
+}
+#prev
+{
+	display: block;
+	text-align: center;
+}
+#next
+{
+	text-align: center;
+	width: 100%;
+	display: block;
+}

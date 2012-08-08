@@ -1,0 +1,9 @@
+9:27:16 PM: ../al-mamager/options/options.php:84: warning: Empty msgid.  It is reserved by GNU gettext:
+9:27:16 PM:                                                gettext("") returns the header entry with
+9:27:16 PM:                                                meta information, not the empty string.
+9:27:23 PM: ../sss/tpl/base/contact-form.php:71: warning: Empty msgid.  It is reserved by GNU gettext:
+9:27:23 PM:                                               gettext("") returns the header entry with
+9:27:23 PM:                                               meta information, not the empty string.
+9:29:02 PM: Poedit did not find any files in scanned directories.
+9:29:02 PM: Entries in the catalog are probably incorrect.
+9:29:02 PM: Updating the catalog failed. Click on 'Details >>' for details.
