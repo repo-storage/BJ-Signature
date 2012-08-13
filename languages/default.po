@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Signature\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-08-06 21:41-0500\n"
-"PO-Revision-Date: 2012-08-06 21:41-0500\n"
+"POT-Creation-Date: 2012-08-08 15:41-0500\n"
+"PO-Revision-Date: 2012-08-08 15:41-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -125,11 +125,11 @@ msgstr ""
 #: image1.php:20 image1.php:85 tpl/base/aside-single.php:48
 #: tpl/base/aside.php:45 tpl/base/chat-single.php:48 tpl/base/chat.php:29
 #: tpl/base/gallery-single.php:48 tpl/base/gallery.php:61
-#: tpl/base/general.php:58 tpl/base/image-single.php:48
-#: tpl/base/link-single.php:48 tpl/base/link.php:50 tpl/base/page.php:15
+#: tpl/base/general.php:57 tpl/base/image-single.php:48
+#: tpl/base/link-single.php:48 tpl/base/link.php:44 tpl/base/page.php:15
 #: tpl/base/quote-single.php:52 tpl/base/quote.php:51
 #: tpl/base/single-aside.php:39 tpl/base/single.php:48
-#: tpl/base/status-single.php:48 tpl/base/status.php:49 tpl/base/themes.php:54
+#: tpl/base/status-single.php:48 tpl/base/status.php:50 tpl/base/themes.php:54
 msgid "Edit"
 msgstr ""
 
@@ -144,11 +144,11 @@ msgstr ""
 #: image1.php:71 tpl/base/aside-single.php:28 tpl/base/aside.php:36
 #: tpl/base/chat-single.php:28 tpl/base/chat.php:20
 #: tpl/base/gallery-single.php:28 tpl/base/gallery.php:52
-#: tpl/base/general.php:49 tpl/base/image-single.php:28 tpl/base/image.php:21
-#: tpl/base/link-single.php:28 tpl/base/link.php:41 tpl/base/page.php:14
+#: tpl/base/general.php:48 tpl/base/image-single.php:28 tpl/base/image.php:21
+#: tpl/base/link-single.php:28 tpl/base/link.php:35 tpl/base/page.php:14
 #: tpl/base/quote-single.php:32 tpl/base/quote.php:42
 #: tpl/base/single-aside.php:20 tpl/base/single.php:28
-#: tpl/base/status-single.php:28 tpl/base/status.php:40 tpl/base/themes.php:45
+#: tpl/base/status-single.php:28 tpl/base/status.php:41 tpl/base/themes.php:45
 msgid "Pages:"
 msgstr ""
 
@@ -248,10 +248,6 @@ msgstr ""
 
 #: theme_functions.php:85
 msgid "Theme Large"
-msgstr ""
-
-#: theme_functions.php:259
-msgid ")"
 msgstr ""
 
 #: theme_functions.php:420 includes/plugin-activations.php:84
@@ -358,11 +354,11 @@ msgstr ""
 msgid "Plugin activated successfully."
 msgstr ""
 
-#: includes/customizer.php:50
+#: includes/customizer.php:18
 msgid "Demonstration Stuff"
 msgstr ""
 
-#: includes/customizer.php:69
+#: includes/customizer.php:37
 msgid "Color Setting"
 msgstr ""
 
@@ -384,11 +380,11 @@ msgstr ""
 
 #: tpl/base/aside-single.php:14 tpl/base/aside.php:16
 #: tpl/base/chat-single.php:14 tpl/base/gallery-single.php:14
-#: tpl/base/gallery.php:15 tpl/base/general.php:21
+#: tpl/base/gallery.php:15 tpl/base/general.php:20
 #: tpl/base/image-single.php:14 tpl/base/link-single.php:14
 #: tpl/base/link.php:16 tpl/base/quote-single.php:17 tpl/base/quote.php:17
 #: tpl/base/single-aside.php:26 tpl/base/single.php:14
-#: tpl/base/status-single.php:14 tpl/base/status.php:18 tpl/base/themes.php:16
+#: tpl/base/status-single.php:14 tpl/base/status.php:19 tpl/base/themes.php:16
 #, php-format
 msgid ""
 "<span class=\"sep\">Posted on </span><a href=\"%1$s\" rel=\"bookmark\"><time "
@@ -418,37 +414,37 @@ msgid ""
 msgstr ""
 
 #: tpl/base/aside.php:41 tpl/base/chat.php:25 tpl/base/gallery.php:57
-#: tpl/base/general.php:54 tpl/base/link.php:46 tpl/base/quote.php:47
-#: tpl/base/status.php:45 tpl/base/themes.php:50
+#: tpl/base/general.php:53 tpl/base/link.php:40 tpl/base/quote.php:47
+#: tpl/base/status.php:46 tpl/base/themes.php:50
 msgid "Posted in "
 msgstr ""
 
 #: tpl/base/aside.php:43 tpl/base/chat.php:27 tpl/base/gallery.php:59
-#: tpl/base/general.php:56 tpl/base/link.php:48 tpl/base/quote.php:49
-#: tpl/base/status.php:47 tpl/base/themes.php:52
+#: tpl/base/general.php:55 tpl/base/link.php:42 tpl/base/quote.php:49
+#: tpl/base/status.php:48 tpl/base/themes.php:52
 msgid "Tagged "
 msgstr ""
 
 #: tpl/base/aside.php:44 tpl/base/chat.php:28 tpl/base/gallery.php:60
-#: tpl/base/general.php:57 tpl/base/link.php:49 tpl/base/quote.php:50
-#: tpl/base/single-aside.php:37 tpl/base/status.php:48 tpl/base/themes.php:53
+#: tpl/base/general.php:56 tpl/base/link.php:43 tpl/base/quote.php:50
+#: tpl/base/single-aside.php:37 tpl/base/status.php:49 tpl/base/themes.php:53
 msgid "Leave a comment"
 msgstr ""
 
 #: tpl/base/aside.php:44 tpl/base/chat.php:28 tpl/base/gallery.php:60
-#: tpl/base/general.php:57 tpl/base/link.php:49 tpl/base/quote.php:50
-#: tpl/base/single-aside.php:37 tpl/base/status.php:48 tpl/base/themes.php:53
+#: tpl/base/general.php:56 tpl/base/link.php:43 tpl/base/quote.php:50
+#: tpl/base/single-aside.php:37 tpl/base/status.php:49 tpl/base/themes.php:53
 msgid "1 Comment"
 msgstr ""
 
 #: tpl/base/aside.php:44 tpl/base/chat.php:28 tpl/base/gallery.php:60
-#: tpl/base/general.php:57 tpl/base/link.php:49 tpl/base/quote.php:50
-#: tpl/base/single-aside.php:37 tpl/base/status.php:48 tpl/base/themes.php:53
+#: tpl/base/general.php:56 tpl/base/link.php:43 tpl/base/quote.php:50
+#: tpl/base/single-aside.php:37 tpl/base/status.php:49 tpl/base/themes.php:53
 msgid "% Comments"
 msgstr ""
 
 #: tpl/base/chat.php:15 tpl/base/gallery.php:42 tpl/base/gallery.php:47
-#: tpl/base/image.php:15 tpl/base/link.php:33 tpl/base/quote.php:37
+#: tpl/base/image.php:15 tpl/base/link.php:27 tpl/base/quote.php:37
 #: tpl/base/single-aside.php:15 tpl/base/single-aside.php:19
 #: tpl/base/themes.php:25
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"

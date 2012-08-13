@@ -40,9 +40,5 @@ function themename_customize_register($wp_customize) {
 	) ) );
 }
 
-add_action ('admin_menu', 'bj_theme_custom_admin');
-function bj_theme_custom_admin() {
-	// add the Customize link to the admin menu
-	add_theme_page( 'Customize', 'Customize Theme', 'edit_theme_options', 'customize.php' );
-}
+
 

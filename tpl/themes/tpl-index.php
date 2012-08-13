@@ -17,6 +17,7 @@
             </div>
             <div class="span4">
                 <section id="sidebar">
+                    lll
                     <?php cwp_layout::the_sidebar('tbs'); ?>
                 </section>
             </div>

@@ -29,7 +29,7 @@
             cwp_post_gallery::factory(get_the_ID())
                     ->set_number_post(3)
                     ->set_image_size('theme-thumbnail')
-                    ->display('span4 cwp-gallery')
+                    ->display_thumbnails('span4 cwp-gallery')
 
 
             ?>

@@ -24,7 +24,13 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php if(post_password_required()) : the_excerpt(); else : the_content(); endif ; ?>
+		<?php if(post_password_required()) : the_excerpt(); else :
+                    cwp_post_gallery::factory(get_the_ID())
+                    ->set_number_post(-1)
+                    ->set_image_size('gallery-thumb')
+                    ->display('span4 cwp-gallery');
+                    the_content();
+                endif ; ?>
 		<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'basejump' ), 'after' => '</div>' ) ); ?>
 	</div><!-- .entry-content -->
 
