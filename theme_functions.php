@@ -61,6 +61,22 @@ function bj_admin_init() {
 //cts_shipping::factory()->add_shipping();
 }
 
+
+add_action('after_theme_setup', 'bj_theme_setup');
+
+function bj_theme_setup(){
+        /*
+     * footer widgets
+     */
+    cwp::add_widget('Sidebar', 'sidebar', 'Top sidebar widget');
+    cwp::add_widget('Secondary Sidebar', 'secondary-sidebar', 'Themes Secondary Sidebar');
+    cwp::add_widget('info 1', 'info-1', 'Display widgets in the first footer box');
+    cwp::add_widget('info 2', 'info-2', 'Display widgets in the second footer box');
+    cwp::add_widget('info 3', 'info-3', 'Display widgets in the third footer box');
+    cwp::add_widget('info 4', 'info-4', 'Display widgets in the fourth footer box');
+    cwp::add_widget('info 5', 'info-5', 'Display widgets in the fifth footer box');
+    cwp::add_widget('Widget Page', 'widget-page', 'Display widgets on the widget-page tpl');
+    cwp::register_sidebar('404 Page', '404-page', 'Display widgets on the 404-page tpl');
 /*
  * *********** Custom images sizes and post media manage integration ************
  */
@@ -73,6 +89,15 @@ add_image_size('theme-thumbnail', 900, 220, true);
 add_image_size('theme-medium', 960, 0, true);
 add_image_size('theme-large', 1200, 0, true);
 add_image_size('gallery-thumb', 480, 480, TRUE);
+
+add_filter('image_size_names_choose', 'cwp_theme_images');
+
+
+$recthumb = new Recent_thumbs_Widget();
+
+}
+
+
 
 //add_image_size('theme-preview', 620, 500, true);
 
@@ -87,9 +112,6 @@ function cwp_theme_images($sizes) {
     return $imgs;
 }
 
-add_filter('image_size_names_choose', 'cwp_theme_images');
-
-$recthumb = new Recent_thumbs_Widget();
 
 /**
  * enqueue scripts
