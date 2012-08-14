@@ -35,6 +35,11 @@ function bj_plugins() {
             'external_url' => '',
         ),
         array(
+            'name' => 'Adminbar Post Menus',
+            'slug' => 'adminbar-post-menus',
+            'required' => true
+        ),
+        array(
             'name' => 'Meta Box',
             'slug' => 'meta-box',
             'required' => true
