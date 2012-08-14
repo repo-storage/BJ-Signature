@@ -28,9 +28,11 @@
         </div><!-- .entry-summary -->
 <?php else : ?>
         <div class="entry-content">
+            <div class="link-image">
             <a href="<?php echo get_post_meta($post->ID, '_format_link_url', TRUE) ?>" title="<?php echo the_title_attribute('echo=0') ?>" target="_blank">
-            <?php if (has_post_thumbnail()) the_post_thumbnail('theme-thumbail'); ?>
+            <?php if (has_post_thumbnail()) the_post_thumbnail('medium'); ?>
             </a>
+            </div>
         <?php the_content('... <span class="readon-link"> ) </span> '); ?>
 
         <?php wp_link_pages(array('before' => '<div class="page-link">' . __('Pages:', 'basejump'), 'after' => '</div>')); ?>

@@ -759,6 +759,12 @@ ARTICLE
 .format-link
 {
 }
+.format-link .link-image
+{
+	width: 300px;
+	float: left;
+	margin-right: 20px;
+}
 .format-quote P
 {
 	font-style: italic;
