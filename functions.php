@@ -10,7 +10,7 @@ function install_guide($templates) {
     load_template($tpl);
 }
 
-if (!class_exists('cwp') OR $wp_version > 3.4):
+if (!class_exists('cwp') OR !class_exists('al_manager') OR $wp_version > 3.4):
     add_filter('template_include', 'install_guide');
     return;
 endif;

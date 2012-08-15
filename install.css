@@ -1,0 +1,72 @@
+/*
+Document   : install
+Created on : Aug 14, 2012, 9:22:05 PM
+Author     : studio
+Description:
+Purpose of the stylesheet follows.
+*/
+/*+clearfix {*/
+.clear:after, .hero-unit DIV:after
+{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	font-size: 0;
+}
+.clear, .hero-unit DIV
+{
+	display: inline-block;
+}
+.clear, .hero-unit DIV
+{
+/*\*/
+	display: block;
+/**/
+	-height: 1px;
+}
+/*+}*/
+BODY #content
+{
+	padding-top: 140px;
+}
+.hero-unit
+{
+	min-height: 280px;
+}
+/*[clearfix]*/.hero-unit DIV
+{
+	margin-bottom: 20px;
+}
+/*[clearfix]*/.clear
+{
+	clear: both;
+	visibility: hidden;
+}
+HGROUP
+{
+	margin-top: 40px;
+}
+.page-header
+{
+	border-bottom: none;
+}
+H1, H2, H3, H4
+{
+	margin-bottom: 20px;
+}
+HGROUP H1
+{
+	font-size: 72px;
+}
+#articles .screenshot
+{
+	width: 302px;
+	float: left;
+	margin-right: 20px;
+}
+#footer
+{
+	text-align: center;
+}
