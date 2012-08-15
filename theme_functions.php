@@ -81,26 +81,29 @@ function bj_theme_setup(){
  * *********** Custom images sizes and post media manage integration ************
  */
 
-add_theme_support('post-thumbnails');
 
 
 
-add_image_size('theme-thumbnail', 900, 220, true);
-add_image_size('theme-medium', 960, 0, true);
-add_image_size('theme-large', 1200, 0, true);
-add_image_size('gallery-thumb', 480, 480, TRUE);
-
-add_filter('image_size_names_choose', 'cwp_theme_images');
 
 
-$recthumb = new Recent_thumbs_Widget();
+
 
 }
 
 
+$recthumb = new Recent_thumbs_Widget();
 
+add_theme_support('post-thumbnails');
+
+
+
+add_image_size('rec-thumbs-widget', 200, 120, true);
+add_image_size('theme-thumbnail', 900, 220, true);
+add_image_size('theme-medium', 960, 0, true);
+add_image_size('theme-large', 1200, 0, true);
+add_image_size('gallery-thumb', 480, 480, TRUE);
 //add_image_size('theme-preview', 620, 500, true);
-
+add_filter('image_size_names_choose', 'cwp_theme_images');
 function cwp_theme_images($sizes) {
     $isizes = array(
         "theme-thumbnail" => __('Theme Thumbnails', 'basejump'),

@@ -51,7 +51,7 @@ A:hover
 }
 #content P A:link, #content P A:active
 {
-	color: #2E2D2D;
+	color: #1B8BE0;
 	/*[disabled]border-bottom:1px dotted #D3D3D3;*/
 	text-decoration: none;
 }
@@ -224,7 +224,7 @@ ARTICLE
 }
 #articles ARTICLE
 {
-	margin-bottom: 60px;
+	margin-bottom: 40px;
 	padding-bottom: 0;
 }
 #articles IMG
@@ -254,7 +254,6 @@ ARTICLE
 {
 	font-family: DroidSerifRegular, Arial, sans-serif;
 	text-transform: uppercase;
-	line-height: 1;
 }
 #articles .format-image H1, #articles .format-status H1
 {
@@ -266,12 +265,12 @@ ARTICLE
 	margin: 0px;
 	padding: 0px;
 }
-#articles H1, #articles H1 A
+#articles H1, #articles H1 A:link
 {
 	font-size: 48px;
 	font-size: 4.8rem;
 	color: #6E6E6E;
-	line-height: 1;
+	line-height: 1.2;
 }
 #articles .format-quote H1, #articles .format-quote HEADER
 {
@@ -764,6 +763,7 @@ ARTICLE
 	width: 300px;
 	float: left;
 	margin-right: 20px;
+	border: 1px dotted #000000;
 }
 .format-quote P
 {
