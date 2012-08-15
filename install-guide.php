@@ -50,18 +50,19 @@
                                 <img src="<?php echo get_template_directory_uri() ?>/screenshot.png" />
                             </div>
                             <!-- class content -->
-                            <h1><?php echo $bj_theme_info = wp_get_theme();?></h1>
+                            <h1><?php echo $bj_theme_info = wp_get_theme();?> <small>VERSION <?php echo $bj_theme_info->Version ?></small></h1>
                             <h3>THEME SETUP INTRODUCTION</h3>
                             <p>
                                 <?php echo $bj_theme_info->Description; ?>
                             </p>
+                            <p>By: <?php echo $bj_theme_info->Author; ?></p>
                                 </div>
                                 <!-- ###### -->
 
-                            <div class="alert alert-error">
-                                Several of the theme's required plugins are missing please go to the Admin / Apperance / Theme Plugins to rectify. Thank you!
+                                <div class="alert alert-error">
+                                        Several of the theme's required Plugins are missing please go to the Admin / Apperance / Theme Plugins to rectify. Thank you!
 
-                                </div>
+                                    </div>
                                 <!-- ###### -->
                             <?php endif;  ?>
                             <div class="clear">Cleared</div>
