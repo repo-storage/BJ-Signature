@@ -323,6 +323,11 @@ ARTICLE
 	padding: 20px;
 	font-style: italic;
 }
+#articles .format-video BLOCKQUOTE
+{
+	border-left: 0px solid #000000;
+	margin-bottom: 20px;
+}
 #subscribe
 {
 	background-color: #6E6E6E;
@@ -758,12 +763,20 @@ ARTICLE
 .format-link
 {
 }
-.format-link .link-image
+.format-link .link-image, .format-video .link-image
 {
 	width: 300px;
 	float: left;
 	margin-right: 20px;
 	border: 1px dotted #000000;
+}
+.format-video .entry-meta
+{
+	color: #6E6E6E;
+}
+.format-video BLOCKQUOTE, .format-video .entry-content BLOCKQUOTE
+{
+	background-color: #2E2D2D;
 }
 .format-quote P
 {
@@ -793,6 +806,13 @@ ARTICLE
 }
 .format-video
 {
+	padding: 20px;
+	background-color: #EEEEEE;
+	color: #6E6E6E;
+}
+.format-video .link-image
+{
+	border: 1px none #000000;
 }
 /** comments ***/
 #comments
